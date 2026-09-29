@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Maison de Charlotte ｜ 大人になった少女へ</title>
+<meta name="description" content="大人になった女の子のための宝箱。シャルロッテ嬢のワードローブから、選び抜かれたとっておきをひとすくい。フレンチアンティークのミステリースクープ、Maison de Charlotte。" />
+<meta property="og:title" content="Maison de Charlotte ｜ 大人になった少女へ" />
+<meta property="og:description" content="大人になった女の子のための宝箱。シャルロッテ嬢のワードローブから、選び抜かれたとっておきをひとすくい。" />
+<meta property="og:image" content="hero.jpg" />
+<meta name="theme-color" content="#F6EEE6" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --ivory:#FBF6EF; --milk:#FFFBF6; --pinkbeige:#F2E3DA; --champbeige:#EFE2D0;
+  --dusty:#C99A9A; --rosebeige:#D8B4A6; --palepink:#F6E2E1;
+  --gold:#BFA06A; --goldsoft:#D9C39A; --ink:#5E4A45; --inksoft:#8A7470;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;line-height:2;letter-spacing:.06em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+.en{font-family:"Cormorant Garamond",serif;letter-spacing:.14em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+p{font-size:15px}
+@media(max-width:640px){p{font-size:14px}}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:linear-gradient(to bottom,rgba(251,246,239,.92),rgba(251,246,239,0));}
+header .logo{font-family:"Cormorant Garamond",serif;font-size:20px;letter-spacing:.18em;color:var(--ink)}
+header nav a{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacing:.2em;margin-left:22px;color:var(--inksoft)}
+@media(max-width:640px){header nav{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url(hero.jpg) center/cover no-repeat;transform:scale(1.04);animation:breathe 14s ease-in-out infinite alternate}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,246,239,0) 30%,rgba(251,246,239,.78) 62%,rgba(251,246,239,.9) 100%)}
+.hero .copy{position:relative;text-align:center;padding:0 7vw 0 24px;max-width:560px}
+.hero .crown{width:38px;margin:0 auto 18px;opacity:.9}
+.hero h1{font-weight:400;font-size:clamp(34px,5vw,58px);line-height:1.2;color:var(--ink)}
+.hero .sub{font-size:14px;letter-spacing:.3em;color:var(--inksoft);margin-top:14px}
+.hero .lead{margin-top:30px;font-size:15px;line-height:2.2}
+.hero .btns{margin-top:36px}
+@keyframes breathe{to{transform:scale(1.1)}}
+@media(max-width:760px){
+  .hero{align-items:flex-end;justify-content:center}
+  .hero .veil{background:linear-gradient(180deg,rgba(251,246,239,0) 25%,rgba(251,246,239,.88) 60%,rgba(251,246,239,.96) 100%)}
+  .hero .copy{padding:0 20px 70px}
+}
+
+/* buttons */
+.btn{display:inline-block;padding:14px 36px;border:1px solid var(--gold);color:var(--ink);font-size:14px;letter-spacing:.2em;background:rgba(255,251,246,.7);transition:.4s}
+.btn:hover{background:var(--gold);color:var(--milk)}
+.btn.solid{background:var(--dusty);border-color:var(--dusty);color:var(--milk)}
+.btn.solid:hover{background:var(--rosebeige);border-color:var(--rosebeige)}
+
+/* section */
+section{padding:120px 0}
+@media(max-width:640px){section{padding:84px 0}}
+.head{text-align:center;margin-bottom:56px}
+.head .en{display:block;font-size:14px;color:var(--gold);letter-spacing:.4em}
+.head h2{font-weight:400;font-size:clamp(22px,3vw,30px);margin-top:10px}
+.rule{width:120px;height:14px;margin:18px auto 0;background:
+  linear-gradient(var(--goldsoft),var(--goldsoft)) left center/46px 1px no-repeat,
+  linear-gradient(var(--goldsoft),var(--goldsoft)) right center/46px 1px no-repeat}
+.rule::after{content:"♡";display:block;text-align:center;color:var(--gold);font-size:11px;line-height:14px}
+
+/* framed card (thin champagne-gold frame with small corner ornaments) */
+.frame{position:relative;border:1px solid var(--goldsoft);padding:56px 40px;background:var(--milk)}
+.frame::before{content:"";position:absolute;inset:7px;border:1px solid rgba(191,160,106,.35);pointer-events:none}
+.corner{position:absolute;width:22px;height:22px;color:var(--gold)}
+.corner.tl{top:-11px;left:-11px}.corner.tr{top:-11px;right:-11px}.corner.bl{bottom:-11px;left:-11px}.corner.br{bottom:-11px;right:-11px}
+@media(max-width:640px){.frame{padding:44px 22px}}
+
+/* concept */
+.concept{background:var(--ivory);text-align:center}
+.concept .frame{max-width:760px;margin:0 auto}
+.concept p+p{margin-top:1.6em}
+.concept .quote{font-size:18px;color:var(--dusty);margin:0 0 1.6em}
+
+/* charlotte */
+.lady{background:linear-gradient(180deg,var(--ivory),var(--pinkbeige))}
+.lady .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:center}
+.lady .ph{position:relative}
+.lady .ph img{border:1px solid var(--goldsoft);padding:8px;background:var(--milk)}
+.lady .txt p+p{margin-top:1.4em}
+.lady .sign{margin-top:28px;text-align:right;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;color:var(--gold)}
+@media(max-width:760px){.lady .grid{grid-template-columns:1fr;gap:40px}}
+
+/* scoop */
+.scoop{background:var(--pinkbeige)}
+.scoop .intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:72px}
+.scoop .intro img{border:1px solid var(--goldsoft);padding:8px;background:var(--milk)}
+.scoop .intro p+p{margin-top:1.4em}
+@media(max-width:760px){.scoop .intro{grid-template-columns:1fr;gap:36px}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{background:var(--milk);border:1px solid rgba(191,160,106,.45);padding:34px 18px 28px;text-align:center;position:relative}
+.step .no{font-family:"Cormorant Garamond",serif;font-size:13px;letter-spacing:.3em;color:var(--gold)}
+.step .ic{font-size:26px;margin:10px 0 8px;opacity:.85}
+.step h3{font-weight:500;font-size:16px}
+.step p{font-size:13px;margin-top:10px;line-height:1.9;color:var(--inksoft)}
+@media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+
+/* boxes */
+.boxes{background:var(--ivory)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--milk);border:1px solid var(--goldsoft);padding:44px 24px;text-align:center;position:relative}
+.card .en{font-size:26px;color:var(--ink)}
+.card .ja{font-size:13px;color:var(--gold);letter-spacing:.3em;margin-top:4px}
+.card .spoons{margin:18px 0 14px;color:var(--dusty);letter-spacing:.4em}
+.card p{font-size:13.5px;line-height:1.9;color:var(--inksoft)}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+.note{text-align:center;margin-top:44px;font-size:13px;color:var(--inksoft)}
+.center{text-align:center;margin-top:40px}
+
+/* letter */
+.letter{background:linear-gradient(180deg,var(--pinkbeige),var(--palepink))}
+.letter .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.letter img{border:1px solid var(--goldsoft);padding:8px;background:var(--milk)}
+.letter p+p{margin-top:1.4em}
+@media(max-width:760px){.letter .grid{grid-template-columns:1fr}}
+
+/* links */
+.links{background:var(--ivory);text-align:center}
+.links .row{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+
+footer{background:var(--champbeige);text-align:center;padding:56px 24px 40px;font-size:12px;color:var(--inksoft)}
+footer .logo{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.2em;color:var(--ink)}
+footer .fl{margin:18px 0}
+footer .fl a{margin:0 12px;border-bottom:1px solid rgba(94,74,69,.25)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:1.2s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hero .bg{animation:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="crown" viewBox="0 0 40 26"><path d="M3 22 L1 7 L11 14 L20 2 L29 14 L39 7 L37 22 Z" fill="none" stroke="currentColor" stroke-width="1.2"/><line x1="4" y1="25" x2="36" y2="25" stroke="currentColor" stroke-width="1.2"/><circle cx="20" cy="2" r="1.6" fill="currentColor"/><circle cx="1" cy="7" r="1.3" fill="currentColor"/><circle cx="39" cy="7" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="bow" viewBox="0 0 24 24"><path d="M12 12 C7 5 2 7 3 12 C2 17 7 19 12 12 C17 19 22 17 21 12 C22 7 17 5 12 12 Z" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><path d="M11 13 L8 21 M13 13 L16 21" stroke="currentColor" stroke-width="1"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <a class="logo" href="#top">Maison de Charlotte</a>
+  <nav>
+    <a href="#concept">Concept</a>
+    <a href="#charlotte">Charlotte</a>
+    <a href="#scoop">Scoop</a>
+    <a href="#boxes">Boxes</a>
+  </nav>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <div class="bg" role="img" aria-label="ドレッサーの上の宝石箱とパール"></div>
+  <div class="veil"></div>
+  <div class="copy">
+    <svg class="crown" style="color:var(--gold)"><use href="#crown"/></svg>
+    <h1 class="en">Maison de<br>Charlotte</h1>
+    <p class="sub">大人になった少女へ</p>
+    <p class="lead">ようこそ、シャルロッテの宝物匣へ。🤍<br>封を開けるまで何が出るかわからない、<br>ときめきのミステリースクープを<br>お届けしております。</p>
+    <div class="btns"><a class="btn" href="#concept">宝箱をひらく</a></div>
+  </div>
+</section>
+
+<section class="concept" id="concept">
+  <div class="wrap">
+    <div class="head rv"><span class="en">CONCEPT</span><h2>大人になった女の子のための宝箱</h2><div class="rule"></div></div>
+    <div class="frame rv">
+      <svg class="corner tl"><use href="#bow"/></svg><svg class="corner tr"><use href="#bow"/></svg><svg class="corner bl"><use href="#bow"/></svg><svg class="corner br"><use href="#bow"/></svg>
+      <p class="quote">「もう大人だから」と、<br>そっと閉じたままの少女心はございませんか。</p>
+      <p>外では、求められる自分を<br>きちんと演じて過ごす毎日。<br>好きなものを「好き」と言えないまま、<br>大人になった方も多いのではないでしょうか。</p>
+      <p>Maison de Charlotte は、<br>そんなあなたが家に帰り、ひとりで封を開ける<br>小さな宝箱をお届けしております。</p>
+      <p>誰にも見せなくてよい、<br>あなただけのときめきの時間を。🎀</p>
+    </div>
+  </div>
+</section>
+
+<section class="lady" id="charlotte">
+  <div class="wrap">
+    <div class="head rv"><span class="en">CHARLOTTE</span><h2>シャルロッテ嬢のこと</h2><div class="rule"></div></div>
+    <div class="grid">
+      <div class="ph rv"><img src="wardrobe.jpg" alt="朝の光が差し込むお城の化粧室のドレッサー" loading="lazy" width="1024" height="1280"></div>
+      <div class="txt rv">
+        <p>フランスの静かな街のはずれ。<br>大きく凛としたお城に、<br>シャルロッテ嬢は暮らしております。</p>
+        <p>レースやリボン、かすみ草、<br>ふんわりとしたものが大好きなお嬢様。<br>貝殻や宝石を集めるように、<br>特別なものをひとつずつ大切にされてまいりました。</p>
+        <p>お城のワードローブには、<br>そうして選び抜かれた「とっておき」が<br>たくさん眠っております。</p>
+        <p>私はお嬢様にお仕えするお仕立て係として、<br>そのとっておきを丁寧にお包みし、<br>あなたの元へお届けしております。🕊️</p>
+        <p class="sign">— Maison de Charlotte</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scoop" id="scoop">
+  <div class="wrap">
+    <div class="head rv"><span class="en">MYSTERY SCOOP</span><h2>ミステリースクープとは</h2><div class="rule"></div></div>
+    <div class="intro">
+      <img class="rv" src="scoop.jpg" alt="シャンパンゴールドのスプーンでパールをすくう手元" loading="lazy" width="1024" height="1024">
+      <div class="rv">
+        <p>宝物の中から、スプーンでひとすくい。<br>すくい上げたものが、そのままあなたの元へ旅立ちます。</p>
+        <p>何が届くかは、封を開ける瞬間まで秘密でございます。<br>開けた瞬間に胸がそっと高鳴る、<br>そんなときめきを大切にしております。</p>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="no">STEP 01</div><div class="ic">💌</div><h3>ご注文</h3><p>公式ショップより、<br>お好きな宝箱をお選びくださいませ。</p></div>
+      <div class="step rv"><div class="no">STEP 02</div><div class="ic">🥄</div><h3>ひとすくい</h3><p>あなたのために、<br>ワードローブからすくい上げます。</p></div>
+      <div class="step rv"><div class="no">STEP 03</div><div class="ic">🎀</div><h3>お包み</h3><p>ひとつずつ心を込めて、<br>丁寧にお包みいたします。</p></div>
+      <div class="step rv"><div class="no">STEP 04</div><div class="ic">👑</div><h3>お届け</h3><p>宝箱があなたの元へ。<br>どうぞ、封を開ける瞬間を。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="boxes" id="boxes">
+  <div class="wrap">
+    <div class="head rv"><span class="en">TREASURE BOXES</span><h2>宝箱のご案内</h2><div class="rule"></div></div>
+    <div class="cards">
+      <div class="card rv"><div class="en">Standard</div><div class="ja">ひとすくい</div><div class="spoons">🥄</div><p>はじめての方にも、<br>ときめきをひとすくいお届けする宝箱。</p></div>
+      <div class="card rv"><div class="en">Luxe</div><div class="ja">ふたすくい</div><div class="spoons">🥄🥄</div><p>ときめきを、もうひとすくい。<br>ご褒美の日にふさわしい宝箱。</p></div>
+      <div class="card rv"><div class="en">Royal</div><div class="ja">みすくい</div><div class="spoons">🥄🥄🥄</div><p>お嬢様のワードローブを<br>たっぷりとお届けする、特別な宝箱。</p></div>
+    </div>
+    <p class="note rv">お届けの時期・ご用意のある宝箱は、公式ショップにてご案内しております。<br>開封の様子をお楽しみいただけるご案内も、ショップにてご確認くださいませ。</p>
+    <div class="center rv"><a class="btn solid" href="https://mdcharlotte.base.shop/" target="_blank" rel="noopener">公式ショップへ</a></div>
+  </div>
+</section>
+
+<section class="letter">
+  <div class="wrap">
+    <div class="grid">
+      <div class="rv">
+        <div class="head" style="text-align:left;margin-bottom:28px"><span class="en">A LETTER</span><h2>お仕立て係より</h2></div>
+        <p>少女の頃にときめいたもの。<br>大人になった今だからこそ、<br>手にしていただけるものがございます。</p>
+        <p>かわいいものを好きなご自分を、<br>どうか大切になさってくださいませ。</p>
+        <p>宝箱の封を開けるひとときが、<br>あなたにとって小さなご褒美となりますように。🌹</p>
+      </div>
+      <img class="rv" src="hero.jpg" alt="宝石箱とバラ" loading="lazy" width="1792" height="1024" style="object-fit:cover;aspect-ratio:4/5">
+    </div>
+  </div>
+</section>
+
+<section class="links">
+  <div class="wrap">
+    <div class="head rv"><span class="en">FOLLOW &amp; ORDER</span><h2>シャルロッテの便り</h2><div class="rule"></div></div>
+    <p class="rv">新しい宝箱の旅立ちのお知らせや、<br>お包みの様子はInstagramにて綴っております。</p>
+    <div class="row rv" style="margin-top:32px">
+      <a class="btn solid" href="https://mdcharlotte.base.shop/" target="_blank" rel="noopener">💎 公式ショップ</a>
+      <a class="btn" href="https://www.instagram.com/charlotte_scoop" target="_blank" rel="noopener">Instagram @charlotte_scoop</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">Maison de Charlotte</div>
+  <div class="fl">
+    <a href="https://mdcharlotte.base.shop/law" target="_blank" rel="noopener">特定商取引法に基づく表記</a>
+    <a href="https://mdcharlotte.base.shop/privacy" target="_blank" rel="noopener">プライバシーポリシー</a>
+    <a href="https://thebase.com/inquiry/mdcharlotte-base-shop" target="_blank" rel="noopener">お問い合わせ</a>
+  </div>
+  <p class="en" style="font-size:12px">© Maison de Charlotte</p>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
