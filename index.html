@@ -11,15 +11,15 @@
 <meta property="og:url" content="https://maisondecharlotte.github.io/" />
 <meta property="og:type" content="website" />
 <link rel="canonical" href="https://maisondecharlotte.github.io/" />
-<meta name="theme-color" content="#F6EEE6" />
+<meta name="theme-color" content="#FCF1F3" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet" />
 <style>
 :root{
-  --ivory:#FBF6EF; --milk:#FFFBF6; --pinkbeige:#F2E3DA; --champbeige:#EFE2D0;
-  --dusty:#C99A9A; --rosebeige:#D8B4A6; --palepink:#F6E2E1;
-  --gold:#BFA06A; --goldsoft:#D9C39A; --ink:#5E4A45; --inksoft:#8A7470;
+  --ivory:#FCF1F3; --milk:#FFF8FA; --pinkbeige:#F6E1E7; --champbeige:#F1DCE2;
+  --dusty:#C98C9B; --rosebeige:#DDA9B6; --palepink:#F9E3EA;
+  --gold:#BFA06A; --goldsoft:#D9C39A; --ink:#6A4A52; --inksoft:#8E7078;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -32,7 +32,7 @@ p{font-size:15px}
 @media(max-width:640px){p{font-size:14px}}
 
 /* header */
-header{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:linear-gradient(to bottom,rgba(251,246,239,.92),rgba(251,246,239,0));}
+header{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:linear-gradient(to bottom,rgba(252,241,243,.92),rgba(252,241,243,0));}
 header .logo{font-family:"Cormorant Garamond",serif;font-size:20px;letter-spacing:.18em;color:var(--ink)}
 header nav a{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacing:.2em;margin-left:22px;color:var(--inksoft)}
 @media(max-width:640px){header nav{display:none}}
@@ -40,7 +40,7 @@ header nav a{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacin
 /* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;overflow:hidden}
 .hero .bg{position:absolute;inset:0;background:url(hero.jpg) center/cover no-repeat;transform:scale(1.04);animation:breathe 14s ease-in-out infinite alternate}
-.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(251,246,239,0) 30%,rgba(251,246,239,.78) 62%,rgba(251,246,239,.9) 100%)}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(252,241,243,0) 30%,rgba(252,241,243,.78) 62%,rgba(252,241,243,.9) 100%)}
 .hero .copy{position:relative;text-align:center;padding:0 7vw 0 24px;max-width:560px}
 .hero .crown{width:38px;margin:0 auto 18px;opacity:.9}
 .hero h1{font-weight:400;font-size:clamp(34px,5vw,58px);line-height:1.2;color:var(--ink)}
@@ -50,12 +50,12 @@ header nav a{font-family:"Cormorant Garamond",serif;font-size:14px;letter-spacin
 @keyframes breathe{to{transform:scale(1.1)}}
 @media(max-width:760px){
   .hero{align-items:flex-end;justify-content:center}
-  .hero .veil{background:linear-gradient(180deg,rgba(251,246,239,0) 25%,rgba(251,246,239,.88) 60%,rgba(251,246,239,.96) 100%)}
+  .hero .veil{background:linear-gradient(180deg,rgba(252,241,243,0) 25%,rgba(252,241,243,.88) 60%,rgba(252,241,243,.96) 100%)}
   .hero .copy{padding:0 20px 70px}
 }
 
 /* buttons */
-.btn{display:inline-block;padding:14px 36px;border:1px solid var(--gold);color:var(--ink);font-size:14px;letter-spacing:.2em;background:rgba(255,251,246,.7);transition:.4s}
+.btn{display:inline-block;padding:14px 36px;border:1px solid var(--gold);color:var(--ink);font-size:14px;letter-spacing:.2em;background:rgba(255,248,250,.7);transition:.4s}
 .btn:hover{background:var(--gold);color:var(--milk)}
 .btn.solid{background:var(--dusty);border-color:var(--dusty);color:var(--milk)}
 .btn.solid:hover{background:var(--rosebeige);border-color:var(--rosebeige)}
@@ -133,7 +133,7 @@ section{padding:120px 0}
 footer{background:var(--champbeige);text-align:center;padding:56px 24px 40px;font-size:12px;color:var(--inksoft)}
 footer .logo{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.2em;color:var(--ink)}
 footer .fl{margin:18px 0}
-footer .fl a{margin:0 12px;border-bottom:1px solid rgba(94,74,69,.25)}
+footer .fl a{margin:0 12px;border-bottom:1px solid rgba(106,74,82,.25)}
 
 /* reveal */
 .rv{opacity:0;transform:translateY(18px);transition:1.2s ease}
